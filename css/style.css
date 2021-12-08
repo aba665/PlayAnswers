@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(118, 149, 243);
+    font-family: 'Luxurious Script', cursive;
+    font-family: 'Meow Script', cursive;
+}
+#container{ 
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(143, 192, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px dashed whitesmoke;
+}
+#conteudo{
+    background-color: #ffffffbb;
+    width: 80%;
+    height: 85%;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: -30px 10px 15px rgb(95, 127, 221),  30px 10px 15px rgb(95, 127, 221),-30px -10px 15px rgb(95, 127, 221);
+}
+#respostas{
+    
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+    position: absolute;
+    top: 22vh;
+   
+}
+#txt{
+    width: 80%;
+    color: darkblue;
+    text-align: justify;
+    font-size: 25px;
+    padding: 5px;
+}
+.primarytext{
+    color: darkblue;
+    position: absolute;
+    top: 1vh;
+    font-size: 42px;
+    text-decoration: underline overline ;
+}
+#txt::after{
+    content: '?';
+    margin-left: 5px;
+    opacity: 1;
+    animation:  UNDER 2s infinite;
+    color: #000;
+}
+.Answer{
+    display: flex;
+    width: 80%;
+    background-color: rgb(118, 149, 243);
+    height: auto;
+    color: white;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgb(95, 127, 221);
+
+}
+.Answer:hover, #next:hover{
+    cursor: pointer;
+}
+#next{
+    position: relative;
+    left: 40%;
+    bottom: 0%;
+    width: 20%;
+    padding: 4px;
+    font-size: 15px;
+    color: darkblue;
+    background-color: rgb(118, 149, 243);
+    border-radius: 2px;
+    border: 2px dashed white;
+    box-shadow: 2px 5px 5px rgb(95, 127, 221);
+}
+.bloqueado{
+    display: none;
+}
+@keyframes UNDER{
+
+    0%, 100%{opacity: 1;}
+    50%{opacity: 0;}
+}
+@media(max-width: 640px){
+    #container{ 
+        margin: 8vh auto;
+        width: 100%;
+        height: 160vh;
+    }
+    #conteudo{
+        width: 90%;
+        height: 100%; 
+    }
+    .Answer{
+        width: 100%;
+    
+    }
+    #respostas{
+        width: 76%;
+        top: 40vh;
+    }
+    #next{
+        width: 25%;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Meow+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ask that I Answer</title>
+</head>
+<body>
+    <div id="container">
+        <h1 class="primarytext">Ask That I Answer</h1>
+        <div id="conteudo">
+            <p id="txt">Qual dos seguinte itens a seguir pode ser representado por um valor constante</p>
+            <div id="respostas">
+                <p class="Answer" id="a" onclick="verificarAcerto( this)"></p>
+                <p class="Answer" id="b" onclick="verificarAcerto( this)"></p>
+                <p class="Answer" id="c" onclick="verificarAcerto( this)"></p>
+                <input id="next" type="submit" value="Próxima" onclick="next()">
+                </div>
+        </div>
+       
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
