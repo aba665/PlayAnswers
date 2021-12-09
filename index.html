@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Meow+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./image/faq.png">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Ask that I Answer</title>
 </head>
 <body>
@@ -15,6 +16,13 @@
         <h1 class="primarytext">Ask That I Answer</h1>
         <div id="conteudo">
             <p id="txt">Qual dos seguinte itens a seguir pode ser representado por um valor constante</p>
+            <div id="pontuacao">
+                <span>Pontuação:</span>
+                <p class="tabponto" id="ponto"></p>
+                <p class="tabponto" id="questao"></p>
+                <span>Acertos:</span>
+                <p class="tabponto" id="acertos"></p>
+            </div>
             <div id="respostas">
                 <p class="Answer" id="a" onclick="verificarAcerto( this)"></p>
                 <p class="Answer" id="b" onclick="verificarAcerto( this)"></p>
@@ -24,6 +32,6 @@
         </div>
        
     </div>
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
